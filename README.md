@@ -1,4 +1,10 @@
 # machine-learning
+
+1. Clone/fork this repository
+2. Go to code directory
+3. Run code by using python3 command
+P.s. If you can not run the code due to round() function, you can replace all np.round to round, then it should be ok.
+
 \#       |  Approach |   Log loss     |	# on leader board
 -------- | --------- | -------------- | ---------------------
 1 |	ELO rating system + Extra Trees Classifier + GPIndividual |	0.589	| 286
