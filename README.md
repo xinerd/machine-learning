@@ -1,5 +1,8 @@
 # machine-learning
 
+[Final Project Report](https://github.com/xinerd/machine-learning/blob/master/final%20report/March%20Machine%20Learning%20Mania%202016.pdf)
+
+
 1. Clone/fork this repository
 2. Go to code directory
 3. Run code by using python3 command
