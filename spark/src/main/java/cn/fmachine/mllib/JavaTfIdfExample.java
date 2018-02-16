@@ -36,6 +36,22 @@ import org.apache.spark.sql.types.StructField;
 import org.apache.spark.sql.types.StructType;
 // $example off$
 
+/**
+ * Term frequency-inverse document frequency (TF-IDF)
+ * is a feature vectorization method widely used in text mining
+ * to reflect the importance of a term to a document in the corpus.
+ * <p>
+ * TF: Both HashingTF and CountVectorizer can be used to generate the term frequency vectors.
+ * IDF: IDF is an Estimator which is fit on a dataset and produces an IDFModel.
+ * <p>
+ * Examples
+ * <p>
+ * In the following code segment, we start with a set of sentences.
+ * We split each sentence into words using Tokenizer.
+ * For each sentence (bag of words), we use HashingTF to hash the sentence into a feature vector.
+ * We use IDF to rescale the feature vectors; this generally improves performance when using text as features.
+ * Our feature vectors could then be passed to a learning algorithm.
+ */
 public class JavaTfIdfExample {
   public static void main(String[] args) {
     SparkSession spark = SparkSession
